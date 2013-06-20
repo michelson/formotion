@@ -99,7 +99,10 @@ module Formotion
       # Cell selection style
       # OPTIONS: :blue, :gray, :none
       # DEFAULT is :blue
-      :selection_style
+      :selection_style,
+      # String Style identificators for pixate
+      :style_id,
+      :style_class
     ]
     PROPERTIES.each {|prop|
       attr_accessor prop

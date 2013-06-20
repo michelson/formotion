@@ -21,6 +21,9 @@ module Formotion
 
       edit_field = row.object.build_cell(cell)
 
+      cell.styleId    = row.style_id
+      cell.styleClass = row.style_class
+
       [cell, edit_field]
     end
 
